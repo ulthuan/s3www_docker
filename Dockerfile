@@ -12,4 +12,4 @@ RUN PLAT_S3=$(echo $TARGETPLATFORM | sed s/\\//\_/g) \
 
 USER s3www
 
-ENTRYPOINT ["/usr/local/bin/s3www"]
+CMD ["/usr/local/bin/s3www"]
