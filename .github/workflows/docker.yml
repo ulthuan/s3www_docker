@@ -28,7 +28,7 @@ jobs:
           context: .
           file: ./Dockerfile
           platforms: linux/amd64, linux/arm64
-          tags: ghcr.io/${{github.repository}}:v${{S3WWW_VERSION}}
-          build-args: "S3WWW_VERSION=${{S3WWW_VERSION}}"
+          tags: ghcr.io/${{github.repository}}:v${{env.S3WWW_VERSION}}
+          build-args: "S3WWW_VERSION=${{env.S3WWW_VERSION}}"
           push: true
 
